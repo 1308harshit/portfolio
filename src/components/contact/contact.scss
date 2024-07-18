@@ -1,101 +1,237 @@
+// @import "../../app.scss";
+
+// .contact{
+//     height: 100%;
+//     width: 100%;
+//     // max-width: 1366px;
+//     max-width: 1024px;
+//     margin: auto;
+//     display: flex;
+//     align-items: center;
+//     gap: 50px;
+
+//     @include mobile{
+//         width: 100%;
+//         padding: 10px;
+//         flex-direction: column;
+//     }
+ 
+//     .textContainer{
+//         flex:1;
+//         display: flex;
+//         flex-direction: column;
+//         gap: 40px;
+
+//         @include mobile{
+//             gap: 20px;
+//             text-align: center;
+//             align-items: center;
+//             margin-top: 70px;
+//         }
+
+//         h1{
+//             font-size: 100px;
+//             line-height: 88px;
+
+//             @include mobile{
+//                 font-size: 36px;
+//             }
+//         }
+
+//         span{
+//             font-weight: 300;
+//         }
+//     }
+
+//     .formContainer{
+//         flex:1;
+//         position: relative;
+        
+//         @include mobile{
+//             padding: 50px;
+//             width: 100%;
+//         }
+
+//         .phoneSvg{
+//             stroke: orange;
+//             position: absolute;
+//             margin: auto;
+//             z-index: -1;
+//         }
+
+//         form{
+//             display: flex;
+//             flex-direction: column;
+//             gap: 20px;
+            
+//             input, textarea{
+//                 padding: 20px;
+//                 background-color: transparent;
+//                 border: 1px solid white;
+//                 color: white;
+//                 border-radius: 5px;
+
+//                 @include mobile{
+//                    padding: 10px;
+//                 }
+//             }
+
+//             button{
+//                 padding: 20px;
+//                 border: none;
+//                 background-color: orange;
+//                 cursor: pointer;
+//                 font-weight: 500;
+
+//                 @include mobile{
+//                     padding: 10px;
+//                 }
+//             }
+//         }
+
+//     }
+// }
+
+
+
+// ---------------------- CHAT GPT ---------------------
 @import "../../app.scss";
 
-.contact{
-    height: 100%;
+@mixin mobile-small {
+  @media (max-width: 20rem) { // 320px
+    @content;
+  }
+}
+
+@mixin mobile-medium {
+  @media (min-width: 20.063rem) and (max-width: 30rem) { // 321px to 480px
+    @content;
+  }
+}
+
+@mixin mobile-large {
+  @media (max-width: 30rem) and (max-height: 50rem) { // 480px and 800px
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 30.063rem) and (max-width: 48rem) { // 481px to 768px
+    @content;
+  }
+}
+
+@mixin tablet-large {
+  @media (min-width: 48.063rem) and (max-width: 64rem) { // 769px to 1024px
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: 64.063rem) and (max-width: 85.375rem) { // 1025px to 1366px
+    @content;
+  }
+}
+
+.contact {
+  height: 100%;
+  width: 100%;
+  max-width: 64rem; // 1024px
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 3.125rem; // 50px
+
+  @include mobile-medium {
     width: 100%;
-    // max-width: 1366px;
-    max-width: 1024px;
-    margin: auto;
+    padding: 0.625rem; // 10px
+    flex-direction: column;
+  }
+
+  .textContainer {
+    flex: 1;
     display: flex;
-    align-items: center;
-    gap: 50px;
+    flex-direction: column;
+    gap: 2.5rem; // 40px
 
-    @include mobile{
-        width: 100%;
-        padding: 10px;
-        flex-direction: column;
+    @include mobile-medium {
+      gap: 1.25rem; // 20px
+      text-align: center;
+      align-items: center;
+      margin-top: 4.375rem; // 70px
     }
 
-    @include mobile-large{
-        width: 100%;
-        padding: 10px;
-        flex-direction: column;
-        height: 100%;
-        // margin-top: 100px;
-    }
- 
-    .textContainer{
-        flex:1;
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
+    h1 {
+      font-size: 6.25rem; // 100px
+      line-height: 5.5rem; // 88px
 
-        @include mobile{
-            gap: 20px;
-            text-align: center;
-            align-items: center;
-            margin-top: 70px;
-        }
-
-        h1{
-            font-size: 100px;
-            line-height: 88px;
-
-            @include mobile{
-                font-size: 36px;
-            }
-        }
-
-        span{
-            font-weight: 300;
-        }
+      @include mobile-medium {
+        font-size: 2.25rem; // 36px
+      }
     }
 
-    .formContainer{
-        flex:1;
-        position: relative;
-        
-        @include mobile{
-            padding: 50px;
-            width: 100%;
-        }
-
-        .phoneSvg{
-            stroke: orange;
-            position: absolute;
-            margin: auto;
-            z-index: -1;
-        }
-
-        form{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-            
-            input, textarea{
-                padding: 20px;
-                background-color: transparent;
-                border: 1px solid white;
-                color: white;
-                border-radius: 5px;
-
-                @include mobile{
-                   padding: 10px;
-                }
-            }
-
-            button{
-                padding: 20px;
-                border: none;
-                background-color: orange;
-                cursor: pointer;
-                font-weight: 500;
-
-                @include mobile{
-                    padding: 10px;
-                }
-            }
-        }
-
+    span {
+      font-weight: 300;
     }
+  }
+
+  .formContainer {
+    flex: 1;
+    position: relative;
+
+    @include mobile-medium {
+      padding: 3.125rem; // 50px
+      width: 100%;
+    }
+
+    .phoneSvg {
+      stroke: orange;
+      position: absolute;
+      margin: auto;
+      z-index: -1;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem; // 20px
+
+      input,
+      textarea {
+        padding: 1.25rem; // 20px
+        background-color: transparent;
+        border: 1px solid white;
+        color: white;
+        border-radius: 5px;
+
+        @include mobile-medium {
+          padding: 0.625rem; // 10px
+        }
+      }
+
+      button {
+        padding: 1.25rem; // 20px
+        border: none;
+        background-color: orange;
+        cursor: pointer;
+        font-weight: 500;
+
+        @include mobile-medium {
+          padding: 0.625rem; // 10px
+        }
+      }
+    }
+  }
+
+  @include tablet {
+    gap: 2rem; // Adjust gap for tablet view
+  }
+
+  @include tablet-large {
+    gap: 2rem; // Adjust gap for large tablet view
+  }
+
+  @include laptop {
+    gap: 2.5rem; // Adjust gap for laptop view
+  }
 }

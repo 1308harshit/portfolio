@@ -1,0 +1,15 @@
+// node_modules/primeicons/primeicons.css
+
+.newtocome {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  flex-direction: column;
+    line-height: 100px;
+
+  h1 {
+    text-align: center; /* Center text horizontally */
+    font-size: 72px;
+  }
+}

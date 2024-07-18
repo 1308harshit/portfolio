@@ -1,43 +1,166 @@
+// @import "../../app.scss";
+
+// .navbar{
+//     height: 100px;
+
+//     .wrapper{
+//         width: 100%;
+//         max-width: 1024px;
+//         margin: auto;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+
+//         @include mobile{
+//             justify-content: flex-end;
+//             padding: 20px;
+//         }
+        
+//         height: 100%;
+//         span{
+//             font-weight: bold;
+
+//             @include mobile{
+//                 display: none;
+//             }
+//         }
+
+
+//         .social{
+//             display: flex;
+//             gap: 20px;
+
+//             img{
+//                 width: 22px;
+//                 height: 22px;
+//             }
+//         }
+//     }
+// }
+
+
+
+
+// ----------------------CHAT GPT--------------------------
 @import "../../app.scss";
 
-.navbar{
-    height: 100px;
+@mixin mobile-small {
+  @media (max-width: 20rem) { // 320px
+    @content;
+  }
+}
 
-    .wrapper{
-        // max-width: 1366px;
-        // ------------------------------
-        width: 100%;
-        max-width: 1024px;
-        // max-width: 1366px;
-        // ------------------------------
-        margin: auto;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+@mixin mobile-medium {
+  @media (min-width: 20.063rem) and (max-width: 30rem) { // 321px to 480px
+    @content;
+  }
+}
 
-        @include mobile{
-            justify-content: flex-end;
-            padding: 20px;
-        }
-        
-        height: 100%;
-        span{
-            font-weight: bold;
+@mixin mobile-large {
+  @media (max-width: 30rem) and (max-height: 50rem) { // 480px and 800px
+    @content;
+  }
+}
 
-            @include mobile{
-                display: none;
-            }
-        }
+@mixin tablet {
+  @media (min-width: 30.063rem) and (max-width: 48rem) { // 481px to 768px
+    @content;
+  }
+}
 
+@mixin tablet-large {
+  @media (min-width: 48.063rem) and (max-width: 64rem) { // 769px to 1024px
+    @content;
+  }
+}
 
-        .social{
-            display: flex;
-            gap: 20px;
+@mixin laptop {
+  @media (min-width: 64.063rem) and (max-width: 85.375rem) { // 1025px to 1366px
+    @content;
+  }
+}
 
-            img{
-                width: 22px;
-                height: 22px;
-            }
-        }
+.navbar {
+  height: 6.25rem; // 100px
+
+  .wrapper {
+    width: 100%;
+    max-width: 64rem; // 1024px
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include mobile-small {
+      justify-content: flex-end;
+      padding: 1.25rem; // 20px
     }
+
+    @include mobile-medium {
+      justify-content: flex-end;
+      padding: 1.25rem; // 20px
+    }
+
+    @include mobile-large {
+      justify-content: flex-end;
+      padding: 1.25rem; // 20px
+    }
+
+    @include tablet {
+      justify-content: space-between;
+      padding: 1.25rem; // 20px
+    }
+
+    @include tablet-large {
+      justify-content: space-between;
+      padding: 1.25rem; // 20px
+    }
+
+    @include laptop {
+      max-width: 85.375rem; // 1366px
+    //   max-width: 64rem; // 1366px
+      justify-content: space-between;
+      padding: 1.25rem; // 20px
+    }
+
+    height: 100%;
+
+    span {
+      font-weight: bold;
+
+      @include mobile-small {
+        display: none;
+      }
+
+      @include mobile-medium {
+        display: none;
+      }
+
+      @include mobile-large {
+        display: none;
+      }
+    }
+
+    .social {
+      display: flex;
+      gap: 1.25rem; // 20px
+
+      img {
+        width: 1.375rem; // 22px
+        height: 1.375rem; // 22px
+      }
+    }
+  }
+
+  @include tablet {
+    height: 5rem; // Adjust the height for tablet view
+  }
+
+  @include tablet-large {
+    height: 5rem; // Adjust the height for large tablet view
+  }
+
+  @include laptop {
+    height: 6.25rem; // Adjust the height for laptop view
+  }
 }

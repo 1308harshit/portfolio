@@ -143,6 +143,12 @@
       height: 300px;
       gap: 5px;
       justify-content: space-around;
+      transition-duration: 0.7s;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+
+      @include mobile{
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+      }
 
       h2 {
         text-decoration: underline;

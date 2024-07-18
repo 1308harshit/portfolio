@@ -10,6 +10,7 @@ import { Services } from "./components/services/Services";
 import { Portfolio } from "./components/portfolio/Portfolio";
 import { Contact } from "./components/contact/Contact";
 import { Cursor } from "./components/cursor/Cursor";
+import { NewToCome } from "./components/newtocome/NewToCome";
 
 
 function App() {
@@ -47,9 +48,9 @@ function App() {
       <section>
         <div></div>
       </section>
-      {/* <section>
-        <div></div>
-      </section> */}
+      <section>
+        <NewToCome/>
+      </section>
 {/* ------------------------------------- */}
       
       <section id="Contact">
