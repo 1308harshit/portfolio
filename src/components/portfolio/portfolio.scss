@@ -41,7 +41,9 @@
             overflow: hidden;
 
             .wrapper{
-                max-width: 1366px;
+                width: 100%;
+                // max-width: 1366px;
+                max-width: 1024px;
                 height: 100%;
                 margin: auto;
                 display: flex;
@@ -69,8 +71,8 @@
                     @include mobile{
                         width: 75%;
                         max-height: 300px;
-
                     }
+
 
                     img{
                         width: 100%;
@@ -99,7 +101,7 @@
                     }
 
                     h2{
-                        font-size: 72px;
+                        font-size: 52px;
 
                         @include mobile{
                             font-size: 36px;

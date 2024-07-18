@@ -117,9 +117,9 @@
   .listContainer {
     flex: 2;
     display: flex;
-    max-width: 1366px;
+    width: 100%;
+    max-width: 1024px;
     margin: auto;
-    flex-wrap: wrap;
     
     // -------------------------
     @include mobile {

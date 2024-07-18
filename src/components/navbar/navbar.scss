@@ -4,7 +4,12 @@
     height: 100px;
 
     .wrapper{
-        max-width: 1366px;
+        // max-width: 1366px;
+        // ------------------------------
+        width: 100%;
+        max-width: 1024px;
+        // max-width: 1366px;
+        // ------------------------------
         margin: auto;
         display: flex;
         align-items: center;
@@ -23,6 +28,7 @@
                 display: none;
             }
         }
+
 
         .social{
             display: flex;
