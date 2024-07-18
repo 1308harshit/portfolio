@@ -10,7 +10,7 @@ const item = [
         img: "https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=600",
         desc: "I designed and implemented a dog service web platform featuring emergency assistance from hospitals and NGOs, grooming services, day-care options, and training center’s, all tailored for locality-specific needs. Utilizing Bootstrap and CSS for styling, ionicons and font-awesome for icons, and custom scripts for seamless transitions and enhanced user experience. The platform also includes location-based analysis for each service, optimizing user accessibility and efficiency. "
     }, 
-    {
+    { 
         id: 2,
         title: "My Personal Study Desk",
         // img: "https://images.pexels.com/photos/4050320/pexels-photo-4050320.jpeg?auto=compress&cs=tinysrgb&w=600",
@@ -75,12 +75,12 @@ export const Portfolio = () => {
     <div className="portfolio" ref={ref}>
 
 
-<div className="wrapper">
+
 <div className="progress">
                 <h1>Featured Works</h1>    
                 <motion.div style={{scaleX}} className="progressBar"></motion.div>
             </div>  
-</div>
+
                   
 
         {item.map(item => (
