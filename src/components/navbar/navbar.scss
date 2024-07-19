@@ -117,8 +117,8 @@
     }
 
     @include laptop {
-      max-width: 85.375rem; // 1366px
-    //   max-width: 64rem; // 1366px
+      // max-width: 85.375rem; // 1366px
+      max-width: 64rem; // 1024px
       justify-content: space-between;
       padding: 1.25rem; // 20px
     }

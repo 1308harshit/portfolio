@@ -134,14 +134,15 @@
 }
 
 .contact {
+  // background: linear-gradient(180deg, #111132, #0c0c1d);
   height: 100%;
   width: 100%;
+  // max-width: 1366px; // 1024px
   max-width: 64rem; // 1024px
   margin: auto;
   display: flex;
   align-items: center;
   gap: 3.125rem; // 50px
-  background: linear-gradient(180deg, #111132, #0c0c1d);
 
   @include mobile-medium {
     width: 100%;
