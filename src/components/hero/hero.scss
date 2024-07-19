@@ -133,12 +133,22 @@
             justify-content: center;
             gap: 40px;
 
+            .skills{
+                display: none;
+            }
+
             @include mobile{
-                height: 50%;
+                height: 100%;
                 width: 100%;
-                gap: 20px; 
+                gap: 70px; 
                 align-items: center;
                 text-align: center;
+                flex-direction: column;
+
+                .skills{
+                    display: block;
+                    
+                }
             }
 
             h2 {
@@ -159,6 +169,10 @@
                 gap: 20px;
                 position: relative;
                 z-index: 2; /* Ensure buttons are above slidingTextContainer */
+
+                @include mobile{
+                    flex-direction: column;
+                }
 
                 button,
                 a {
@@ -186,10 +200,12 @@
         right: 0;
 
         @include mobile {
-            height: 54%;
-            width: 100%;
-            top: unset;
-            bottom: 0;
+            // height: 54%;
+            // width: 100%;
+            // top: unset;
+            // bottom: 0;
+            display: none;
+            height: 0%;
         }
 
         img {

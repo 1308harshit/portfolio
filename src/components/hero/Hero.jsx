@@ -135,8 +135,10 @@ export const Hero = () => {
               <motion.button variants={textVariants}>Contact Me</motion.button>
             </Link> */}
 
-            <motion.a href='#Portfolio'>See the Latest Work</motion.a>
+            <motion.a href='#Portfolio'>Explore Latest Work</motion.a>
             <motion.a href='#Contact'>Contact Me</motion.a>
+            
+            <motion.a className='skills' href='#Services'>Skills</motion.a>
           </motion.div>
           <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
         </motion.div>
