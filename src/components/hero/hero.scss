@@ -137,6 +137,10 @@
                 display: none;
             }
 
+            .achievements{
+                display: none;
+            }
+
             @include mobile{
                 height: 100%;
                 width: 100%;
@@ -148,6 +152,10 @@
                 .skills{
                     display: block;
                     
+                }
+
+                .achievements{
+                    display: block;
                 }
             }
 

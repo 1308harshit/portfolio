@@ -38,21 +38,9 @@ function App() {
         <Portfolio/>
       </section>
 
-{/* this is all because of the mess of contact us */}
-{/* need to review the code */}
-
-{/* ------------------------------------- */}
-      <section>
-        <div></div>
-      </section>
-      <section>
-        <div></div>
-      </section>
-      
-      <section>
+      <section id="Achievements">
         <NewToCome/>
       </section>
-{/* ------------------------------------- */}
       
       <section id="Contact">
         <Contact/>

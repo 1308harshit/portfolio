@@ -53,89 +53,74 @@ export const Services = () => {
 
         <motion.div className="listContainer" variants={variants} >
             <motion.div className="box" whileHover={{backgroundColor:"lightgray", color:"black"}}>
-                <h2>Languages</h2>
-                {/* <p>dneofn</p> */}
-                {/* -------------------------------- */}
+                <h2>Programming Languages</h2>
                 <ul>
                     <li> Python</li>
                     <li> Java</li>
                     <li> C++</li>
                     <li> JavaScript</li>
+                    <li> TypeScript</li>
+                    <li> SQL</li>
                 </ul>
-                {/* -------------------------------- */}
-                {/* <button>Go</button> */}
             </motion.div>
 
             <motion.div className="box" whileHover={{backgroundColor:"lightgray", color:"black"}}>
-                <h2>Databases</h2>
-                {/* <p>dneofn</p> */}
-                {/* -------------------------------- */}
+                <h2>Cloud Platforms</h2>
                 <ul>
+                    <li> AWS</li>
+                    <li> Azure</li>
+                    <li> Google Cloud</li>
+                    <li> Hetzner</li>
+                </ul>
+            </motion.div>
+
+            <motion.div className="box" whileHover={{backgroundColor:"lightgray", color:"black"}}>
+                <h2>DevOps & Infrastructure</h2>
+                <ul>
+                    <li> Docker</li>
+                    <li> Kubernetes</li>
+                    <li> Terraform</li>
+                    <li> Jenkins</li>
+                    <li> GitLab CI</li>
+                    <li> Ansible</li>
+                </ul>
+            </motion.div>
+
+            <motion.div className="box" whileHover={{backgroundColor:"lightgray", color:"black"}}>
+                <h2>Frontend Development</h2>
+                <ul>
+                    <li> React</li>
+                    <li> HTML5/CSS3</li>
+                    <li> Bootstrap</li>
+                    <li> Tailwind CSS</li>
+                    <li> Flutter</li>
+                </ul>
+            </motion.div>
+
+            <motion.div className="box" whileHover={{backgroundColor:"lightgray", color:"black"}}>
+                <h2>Backend & Databases</h2>
+                <ul>
+                    <li> Node.js</li>
+                    <li> Django</li>
+                    <li> Express.js</li>
+                    <li> FastAPI</li>
                     <li> MongoDB</li>
                     <li> PostgreSQL</li>
-                    <li> MySQL </li>
+                    <li> MySQL</li>
                 </ul>
-                {/* -------------------------------- */}
-                {/* <button>Go</button> */}
             </motion.div>
 
             <motion.div className="box" whileHover={{backgroundColor:"lightgray", color:"black"}}>
-                <h2>Frontend Frameworks</h2>
-                {/* <p>dneofn</p> */}
-                {/* -------------------------------- */}
+                <h2>Monitoring & Tools</h2>
                 <ul>
-                    <li> React </li>
-                    <li> Bootstrap </li>
-                    <li> Tailwind CSS</li>
-                    
+                    <li> Prometheus</li>
+                    <li> Grafana</li>
+                    <li> SignOz</li>
+                    <li> Git/GitHub</li>
+                    <li> VS Code</li>
                 </ul>
-                {/* -------------------------------- */}
-                {/* <button>Go</button> */}
             </motion.div>
 
-            <motion.div className="box" whileHover={{backgroundColor:"lightgray", color:"black"}}>
-                <h2>Backend Frameworks</h2>
-                {/* <p>dneofn</p> */}
-                {/* -------------------------------- */}
-                <ul>
-                    <li> Node.js </li>
-                    <li> Express.js </li>
-                    <li> Django </li>
-                    
-                </ul>
-                {/* -------------------------------- */}
-                {/* <button>Go</button> */}
-            </motion.div>
-
-            <motion.div className="box" whileHover={{backgroundColor:"lightgray", color:"black"}}>
-                <h2>Technologies</h2>
-                {/* <p>dneofn</p> */}
-                {/* -------------------------------- */}
-                <ul>
-                    <li> Git </li>
-                    <li> GitHub </li>        
-                </ul>
-                {/* -------------------------------- */}
-                {/* <button>Go</button> */}
-            </motion.div>
-
-            <motion.div className="box" whileHover={{backgroundColor:"lightgray", color:"black"}}>
-                <h2> OS</h2>
-                {/* <p>dneofn</p> */}
-                {/* -------------------------------- */}
-                <ul>
-                    <li> Linux </li>
-                    <li> Windows </li>        
-                </ul>
-                {/* -------------------------------- */}
-                {/* <button>Go</button> */}
-            </motion.div>
-
-            {/* <motion.div className="box" whileHover={{backgroundColor:"lightgray", color:"black"}}>
-                <h2>Branding</h2>
-                <p>dneofn</p>
-                <button>Go</button>
-            </motion.div> */}
         </motion.div>
     </motion.div>
   )

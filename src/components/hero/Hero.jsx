@@ -125,27 +125,20 @@ export const Hero = () => {
       <div className="wrapper">
         <motion.div className="textContainer" variants={textVariants} initial="initial" animate="animate">
           <motion.h2 variants={textVariants}>HARSHIT KHATSURIYA</motion.h2>
-          <motion.h1 variants={textVariants}>FullStack Developer</motion.h1>
+          <motion.h1 variants={textVariants}>DevOps & Cloud Engineer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            {/* Use Link to navigate to /contact */}
-            {/* <Link to="#Contact">
-              <motion.button variants={textVariants}>See the Latest Work</motion.button>
-            </Link>
-            <Link to="#Contact">
-              <motion.button variants={textVariants}>Contact Me</motion.button>
-            </Link> */}
-
             <motion.a href='#Portfolio'>Explore Latest Work</motion.a>
             <motion.a href='#Contact'>Contact Me</motion.a>
             
             <motion.a className='skills' href='#Services'>Skills</motion.a>
+            <motion.a className='achievements' href='#Achievements'>Achievements</motion.a>
           </motion.div>
           <motion.img variants={textVariants} animate="scrollButton" src="/scroll.png" alt="" />
         </motion.div>
       </div>
 
       <motion.div className="slidingTextContainer" variants={sliderVariants} initial="initial" animate="animate">
-        Software Engineer MERN Stack Developer Cloud Enthusiast
+        AWS Cloud Engineer DevOps Automation Kubernetes Docker Terraform CI/CD Pipeline System Design
       </motion.div>
 
       <div className="imageContainer">

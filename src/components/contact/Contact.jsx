@@ -53,6 +53,10 @@ export const Contact = () => {
                 <span>khatsuriyaharshit@gmail.com</span>
             </motion.div>
             <motion.div className="item" variants={variants}>
+                <h2>GitHub</h2>
+                <span>github.com/1308harshit</span>
+            </motion.div>
+            <motion.div className="item" variants={variants}>
                 <h2>Address</h2>
                 <span>Ahmedabad, Gujarat</span>
             </motion.div>
