@@ -5,16 +5,17 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   padding: 50px 0;
+  overflow: visible;
 
   @include mobile{
-    height: 100vh;
+    min-height: 100vh;
     padding: 20px 0;
   }
 
   .textContainer {
-    flex: 1;
+    flex: none;
     align-self: flex-end;
     display: flex;
     align-items: center;
@@ -49,7 +50,7 @@
   }
 
   .titleContainer {
-    flex: 1;
+    flex: none;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,7 +115,7 @@
   }
 
   .listContainer {
-    flex: 2;
+    flex: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
@@ -122,12 +123,14 @@
     max-width: 1200px;
     margin: auto;
     padding: 0 20px;
+    margin-bottom: 50px;
     
     @include mobile {
       grid-template-columns: 1fr;
       gap: 20px;
       width: 90%;
       padding: 0 10px;
+      margin-bottom: 30px;
     }
 
     .box {
@@ -141,11 +144,13 @@
       transition: all 0.3s ease;
       background: rgba(255, 255, 255, 0.02);
       backdrop-filter: blur(10px);
-      min-height: 250px;
+      min-height: 280px;
+      height: auto;
+      overflow: visible;
 
       @include mobile{
         padding: 20px;
-        min-height: 200px;
+        min-height: 220px;
         gap: 15px;
       }
 
@@ -162,6 +167,7 @@
         font-size: 24px;
         font-weight: 600;
         margin-bottom: 10px;
+        flex-shrink: 0;
 
         @include mobile {
           font-size: 20px;
@@ -175,6 +181,7 @@
         flex-direction: column;
         gap: 12px;
         flex: 1;
+        overflow: visible;
 
         li {
           padding: 8px 12px;
@@ -183,6 +190,8 @@
           background: rgba(255, 255, 255, 0.05);
           border-radius: 8px;
           transition: all 0.2s ease;
+          white-space: nowrap;
+          overflow: visible;
 
           &:hover {
             background: rgba(255, 165, 0, 0.1);
@@ -192,6 +201,7 @@
           @include mobile {
             font-size: 16px;
             padding: 6px 10px;
+            white-space: normal;
           }
         }
       }
@@ -215,6 +225,7 @@
         cursor: pointer;
         border-radius: 8px;
         font-weight: 500;
+        flex-shrink: 0;
 
         @include mobile {
           background-color: transparent;
