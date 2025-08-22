@@ -2,15 +2,15 @@
 
 .services {
   background: linear-gradient(180deg, #0c0c1d, #111132);
-  // height: 100%;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding: 50px 0;
 
   @include mobile{
     height: 100vh;
-    // min-height: auto;
+    padding: 20px 0;
   }
 
   .textContainer {
@@ -20,14 +20,14 @@
     align-items: center;
     gap: 20px;
     padding-top: 15px;
+    margin-bottom: 30px;
 
     @include mobile {
       align-self: center;
       text-align: center;
       flex-direction: column;
-      // ----------------------
       flex: none;
-      // ----------------------
+      margin-bottom: 20px;
     }
 
     p {
@@ -53,15 +53,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 40px;
 
     @include mobile {
       width: 100%;
-      // ----------------------
       flex: none;
       padding: 20px;
       padding-bottom: 10px;
-      // margin-top: -20%;
-      // ----------------------
+      margin-bottom: 20px;
     }
 
     .title {
@@ -116,65 +115,91 @@
 
   .listContainer {
     flex: 2;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
     width: 100%;
-    max-width: 1024px;
+    max-width: 1200px;
     margin: auto;
+    padding: 0 20px;
     
-    // -------------------------
     @include mobile {
-      flex-direction: column;
-      width: 70%;
-      height: auto;
-      overflow-y: auto;
-      flex-wrap: nowrap;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      width: 90%;
+      padding: 0 10px;
     }
-    // -------------------------
 
     .box {
-      padding: 20px;
-      padding-top: 10px;
-      // padding-bottom: 10px;
-      border: 0.5px solid gray;
-      border-radius: 10px;
+      padding: 30px;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
       display: flex;
       flex-direction: column;
-      margin: 5px;
-      height: 300px;
-      gap: 5px;
-      justify-content: space-around;
-      transition-duration: 0.7s;
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+      gap: 20px;
+      justify-content: flex-start;
+      transition: all 0.3s ease;
+      background: rgba(255, 255, 255, 0.02);
+      backdrop-filter: blur(10px);
+      min-height: 250px;
 
       @include mobile{
-        box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+        padding: 20px;
+        min-height: 200px;
+        gap: 15px;
+      }
+
+      &:hover {
+        border-color: orange;
+        transform: translateY(-5px);
+        box-shadow: 0 10px 30px rgba(255, 165, 0, 0.2);
       }
 
       h2 {
         text-decoration: underline;
         text-align: center;
+        color: orange;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+
+        @include mobile {
+          font-size: 20px;
+        }
       }
 
       ul {
         list-style: none;
         text-align: center;
-        flex-direction: column;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        gap: 12px;
+        flex: 1;
 
         li {
-          padding: 5px;
-          font-size: 20px;
+          padding: 8px 12px;
+          font-size: 18px;
+          color: white;
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 8px;
+          transition: all 0.2s ease;
+
+          &:hover {
+            background: rgba(255, 165, 0, 0.1);
+            transform: scale(1.02);
+          }
+
+          @include mobile {
+            font-size: 16px;
+            padding: 6px 10px;
+          }
         }
       }
 
       @include mobile {
-        border: 1px solid white;
+        border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 15px;
-
         align-items: center;
-        gap: 20px;
-        padding: 10px;
       }
 
       p {
@@ -188,6 +213,8 @@
         background-color: orange;
         border: none;
         cursor: pointer;
+        border-radius: 8px;
+        font-weight: 500;
 
         @include mobile {
           background-color: transparent;

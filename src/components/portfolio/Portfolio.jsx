@@ -85,7 +85,7 @@ export const Portfolio = () => {
     <div className="portfolio" ref={ref}>
 
     <div className="progress">
-                <h1>Featured Works</h1>    
+                <h1>Portfolio Projects</h1>    
                 <motion.div style={{scaleX}} className="progressBar"></motion.div>
             </div>  
 
